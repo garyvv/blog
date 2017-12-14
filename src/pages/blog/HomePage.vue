@@ -1,16 +1,22 @@
 <template>
-  <div class="hello">
-    <h1>{{ msg }}</h1>
-  </div>
+  <el-container>
+    <el-header><Header /></el-header>
+    <el-main><h1>{{ msg }}</h1></el-main>
+    <el-footer>Footer</el-footer>
+  </el-container>
 </template>
 
 <script>
+import Header from '@/components/BlogHeader'
 export default {
   name: 'HomePage',
   data () {
     return {
       msg: 'Welcome to Gary\'s Blog'
     }
+  },
+  components: {
+    Header
   }
 }
 </script>
@@ -30,5 +36,8 @@ li {
 }
 a {
   color: #42b983;
+}
+.el-header {
+  padding: 0;
 }
 </style>
