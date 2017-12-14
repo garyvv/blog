@@ -1,17 +1,12 @@
 <template>
-  <el-menu
-          :default-active="activeIndex"
-          class="el-menu-demo"
-          @select="handleSelect"
-          background-color="#545c64"
-          text-color="#fff"
-          active-text-color="#409EFF">
-
-    <a v-for="item in menu" :key="item.id" :href="item.link">
-      <el-menu-item :index="item.id">{{ item.name }}
-      </el-menu-item>
-    </a>
-  </el-menu>
+  <a href="http://www.miitbeian.gov.cn" target="_blank">
+    <el-alert
+      title="粤ICP备16012388号"
+      type="info"
+      center
+      :closable="false">
+    </el-alert>
+  </a>
 </template>
 
 <script>
@@ -61,8 +56,6 @@ li {
 }
 a {
   color: #42b983;
-}
-.el-menu--horizontal {
-  border-bottom: 0;
+  text-decoration:none;
 }
 </style>
