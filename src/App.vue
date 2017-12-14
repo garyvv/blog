@@ -21,4 +21,21 @@ export default {
 body {
   margin: 0;
 }
+header {
+  height: auto !important;
+}
+.el-header {
+  padding: 0;
+}
+.el-main {
+  padding: 0;
+}
+.el-footer {
+  padding: 0;
+  margin-bottom: 0;
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
+  height: 0 !important;
+}
 </style>
