@@ -7,7 +7,11 @@
           background-color="#545c64"
           text-color="#fff"
           active-text-color="#409EFF">
-    <el-menu-item v-for="item in menu" :key="item.id" :index="item.id">{{ item.name }}</el-menu-item>
+    <el-row type="flex" class="row-bg" justify="end">
+      <el-col v-for="item in menu" :key="item.id" :span="3">
+        <a :href="item.link"><el-menu-item :index="item.id">{{ item.name }}</el-menu-item></a>
+      </el-col>
+    </el-row>
   </el-menu>
 </template>
 
@@ -26,13 +30,6 @@ export default {
         },
         {
           'id': '2',
-          'name': '博客',
-          'class': 'bg-purple-light',
-          'icon': 'el-icon-tickets',
-          'link': 'http://garylv.com',
-        },
-        {
-          'id': '3',
           'name': 'GitHub',
           'class': 'bg-purple',
           'icon': 'el-icon-star-on',
