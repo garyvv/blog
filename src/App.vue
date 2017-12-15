@@ -38,4 +38,8 @@ header {
   text-align: center;
   height: 0 !important;
 }
+a {
+  color: #42b983;
+  text-decoration:none;
+}
 </style>
