@@ -11,7 +11,7 @@
       </el-carousel>
 
       <!-- GitHub 推荐 -->
-      <h1>GitHub</h1>
+      <h1>--- GitHub ---</h1>
       <el-row class="item-list">
         <el-col v-for="card in cards" :key="card.id" :offset="card.id" class="item-list-card">
           <el-card :body-style="{ padding: '0px', height: '300px', background: card.color, color: '#fff', paddingTop: '10px'}" >
@@ -126,11 +126,12 @@ a {
   width: auto;
 }
 .item-list {
-  width: 75%;
+  width: 1024px;
   margin: 0 auto;
   text-align: center;
-  border: 1px solid #545c63;
+  border: 1px solid #E4E7ED;
   border-radius: 5px;
+  background-color: #909399;
 }
 .item-list-card {
   width: 25%;
