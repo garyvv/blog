@@ -5,8 +5,10 @@
     <el-main>
       <!-- 走马灯 -->
       <el-carousel :interval="4000" type="card" height="260px"  style="background-color: #545c63">
-        <el-carousel-item v-for="item in banners" :key="item.id">
-          <a :href="item.link"><img :src="item.image" class="card-img" /></a>
+        <el-carousel-item v-for="item in banners" :key="item.id" :style="{ background : item.color }">
+          <a :href="item.link">
+            <!--<img :src="item.image" class="card-img" />-->
+          </a>
         </el-carousel-item>
       </el-carousel>
 
@@ -47,17 +49,20 @@ export default {
         {
           'id': 1,
           'image': 'http://toy.garylv.com/image/cache/catalog/Banner/IMG_5545-1140x380.JPG',
-          'link': 'http://toy.garylv.com/'
+          'link': 'http://toy.garylv.com/',
+          'color': '#6699CC'
         },
         {
           'id': 2,
           'image': 'http://toy.garylv.com/image/cache/catalog/Banner/IMG_5548-1140x380.JPG',
-          'link': 'http://toy.garylv.com/'
+          'link': 'http://toy.garylv.com/',
+          'color': '#5FB3B3'
         },
         {
           'id': 3,
           'image': 'http://toy.garylv.com/image/cache/catalog/Banner/bianxingjingang-1140x380.jpg',
-          'link': 'http://toy.garylv.com/'
+          'link': 'http://toy.garylv.com/',
+          'color': '#89B784'
         },
       ],
       cards: [
